@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Courier</title>
+
+    <style>
+         .add-courier header a{
+            text-decoration: none;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 30px;
+            color: #fff;
+            background: black;
+        }
+
+        .add-courier{
+            padding-left: 20px;
+        }
+
+        .add-courier header h2{
+            font-size: 37px;
+        }
+
+        label{
+            font-size: 22px;
+        }
+
+        .in-c{
+            width: 300px;
+            padding: 6px;
+            margin-bottom: 20px;
+        }
+
+        #btn{
+            padding: 10px;
+            width: 150px;
+            font-size: 18px;
+            margin: 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        #btn:hover{
+            background: black;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Add Courier Section -->
+    <div class="add-courier">
+        <header>
+            <h2>Add Courier</h2>
+            <h3><a href="dashboard.html">Click To Go Back</a></h3>
+
+        </header>
+        <main>
+
+            <div class="form-courier">
+                <form>
+                    <label>Courier Id</label>
+                    <br>
+                    <input type="number" class="in-c" placeholder="Enter Courier Id">
+                    <br>
+
+                    <label>Courier Name</label>
+                    <br>
+                    <input type="text" class="in-c" placeholder="Enter Courier Name">
+                    <br>
+                    
+                    <label>Courier Email</label>
+                    <br>
+                    <input type="email" class="in-c" placeholder="Enter Courier Email">
+                    <br>
+                    
+                    <label>Age</label>
+                    <br>
+                    <input type="number" class="in-c" placeholder="Enter age">
+                    <br>
+                    
+                    <label>Courier Adress</label>
+                    <br>
+                    <input type="text" class="in-c" placeholder="Enter your address">
+                    <br>
+                    
+                    <label>Gender</label>
+                    <input type="radio" name="radio" value="Male">
+                    <input type="radio" name="radio" value="Female">
+                    <br>
+                    
+                    <label>Courier Status</label>
+                    <input type="radio" name="radio" value="active">
+                    <input type="radio" name="radio" value="block">
+                    <br>
+
+                    <input type="submit" id="btn" value="ADD Courier">
+                </form>
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>

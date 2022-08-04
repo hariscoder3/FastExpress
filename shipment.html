@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Shipment</title>
+
+    <style>
+
+        *{
+            padding: 0;
+        }
+
+        .add-shipment{
+            padding-left: 17px;
+        }
+
+        .add-shipment header a{
+            text-decoration: none;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 30px;
+            color: #fff;
+            background: black;
+            
+            
+        }
+
+        .add-shipment main h3{
+            /* margin-left: 50px; */
+            font-size: 26px;
+            padding: 10px 0px 10px 30px;
+            
+        }
+
+        .add-shipment h2{
+            font-size: 40px;
+            /* background: red; */
+            padding: 0px 0px 0px 0px;
+            /* border-radius: 20px; */
+        }
+
+        label{
+            font-size: 22px;
+
+        }
+
+        .inpt{
+            padding: 8px;
+            width: 300px;
+            margin-bottom: 20px;
+
+        }
+
+        main .shipment-form h3{
+            font-size: 26px;
+        }
+
+        .in{
+            width: 300px;
+            padding: 8px;
+            margin-bottom: 20px;
+        }
+
+        .btn{
+            padding: 10px;
+            width: 150px;
+            font-size: 18px;
+            margin: 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            background: black;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    
+     <!-- add shipment section -->
+
+     <div class="add-shipment" data-page="2">
+        <header>
+            <h2>Add Shipment</h2>
+            <h3><a href="dashboard.html">Click To Go Back</a></h3>
+        </header>
+
+        <main>        
+                <h3>Shipper Info</h3>
+                <div class="sh-form">
+                    <form>
+
+                        <label>Shiper Id</label>
+                        <br>
+                        <input type="number" class="inpt" placeholder="Enter Shiper Id">
+                        <br>
+
+                        <label>Shipper Name</label>
+                        <br>
+                        <input type="text" class="inpt" placeholder="Enter Shipper Name">
+                        <br>
+
+                        <label>Shipper Email</label>
+                        <br>
+                        <input type="email" class="inpt" placeholder="Enter Shipper Email">
+                    </form>
+                </div>
+
+                <div class="receiver-form">
+                    <h3>Receiver Info</h3>
+                    <form>
+                        <label>Receiver Name</label>
+                        <br>
+                        <input type="text" class="inpt" placeholder="Enter Receiver Name">
+                        <br>
+                        
+                        <label>Receiver Email</label>
+                        <br>
+                        <input type="email" class="inpt" placeholder="Enter Receiver Email">
+                        <br>
+
+                        <label>Receiver Adress</label>
+                        <br>
+                        <input type="text" class="inpt" placeholder="Enter Receiver Adress">
+                        <br>
+                    </form>
+                </div>
+
+                <div class="shipment-form">
+                    <h3>Shipment Info</h3>
+                    <form>
+                        <label>Shipment Name</label>
+                        <br>
+                        <input type="text" class="in" placeholder="Enter Shipment Name">
+                        <br>
+
+                        <label>Shipment Id</label>
+                        <br>
+                        <input type="number" class="in" placeholder="Enter Shipment Id">
+                        <br>
+                        
+                        <label>Shipment Price</label>
+                        <br>
+                        <input type="number" class="in" placeholder="Enter Shipment Price">
+                        <br>
+
+                        <label>Shipment Weight</label>
+                        <br>
+                        <input type="number" class="in" placeholder="Shipment Weight">
+                        <br>
+                        
+                        <label>Shipment Assign Date</label>
+                        <br>
+                        <input type="date" class="in">
+                        <br>
+
+                        <label>Delievery Status</label>
+                        <br>
+                        <label>Delievered</label>
+                        <input type="radio" name="radio">
+                        <label>In Progress</label>
+                        <input type="radio" name="radio">
+                        <label>cancelled</label>
+                        <input type="radio" name="radio">
+                        <br>
+
+                        <label>Delievery Date</label>
+                        <br>
+                        <input type="date" class="in">
+                        <br>
+
+                        <label>Amount Status</label>
+                        <br>
+                        <label>Collected</label>
+                        <input type="radio" name="radio">
+                        <label>Not Collected</label>
+                        <input type="radio" name="radio">
+                        <br>
+                        
+                        <input type="submit" class="btn" value="ADD Shipment">
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
